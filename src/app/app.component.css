@@ -1,0 +1,23 @@
+.widget-container {
+  /*color: white;*/
+  font-family: arial;
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+input {
+  font-size: 18px;
+}
+
+.focus {
+  width: 300px;
+  font-size: 20px;
+}

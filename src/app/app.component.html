@@ -1,0 +1,15 @@
+<div class="widget-container">
+  <div class="content">
+    <h1>OTP Validation</h1>
+    <h2>Hi, {{clientId}}!</h2>
+    <div *ngIf="!validateOTP" id="sendNumber">
+      <input type="text" placeholder="Enter your cellphone number" #cellphone>
+      <button (click)="sendOtp(cellphone.value)">Send OTP</button>
+    </div>
+    <div *ngIf="validateOTP" id="sendOTP">
+      <input type="text" placeholder="Enter your OTP" #code>
+      <button (click)="verifyOtp(code.value)">Verify OTP</button>
+      <div>{{valid}}</div>
+    </div>
+  </div>
+</div>
